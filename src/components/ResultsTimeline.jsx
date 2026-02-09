@@ -90,7 +90,7 @@ function ResultsTimeline() {
   return (
     <section className="results-timeline">
       <h2 className="timeline-title">Your results timeline</h2>
-      <p className="timeline-subtitle">what happens after onboarding</p>
+      <p className="timeline-subtitle">What we build first, what launches next, and how we scale.</p>
 
       <div className="timeline-container">
         <div className="timeline-content" ref={contentRef}>

@@ -1,41 +1,102 @@
 import React from 'react';
 
-const partners = [
-  { id: 1, name: 'hubspot.com', image: '/partner11.png', link: 'https://www.hubspot.com' },
-  { id: 2, name: 'smartlead.ai', image: '/partner22.png', link: 'https://www.smartlead.ai' },
-  { id: 3, name: 'clay.com', image: '/partner33.png', link: 'https://www.clay.com' },
-  { id: 4, name: 'salesforce.com', image: '/partner44.png', link: 'https://www.salesforce.com' },
-  { id: 5, name: 'instantly.ai', image: '/partner55.png', link: 'https://instantly.ai/' },
-  { id: 6, name: 'outboundsync.com', image: '/partner66.png', link: 'https://outboundsync.com/' },
-  { id: 7, name: 'leadmagic.io', image: '/partner77.png', link: 'https://leadmagic.io/' },
-  { id: 8, name: 'fireflies.ai', image: '/partner88.png', link: 'https://fireflies.ai/' },
-  { id: 9, name: 'fullenrich.com', image: '/partner99.png', link: 'https://fullenrich.com/' },
-  { id: 10, name: 'n8n.io', image: '/partner100.png', link: 'https://n8n.io/' },
-  { id: 11, name: 'attio.com', image: '/partner111.png', link: 'https://attio.com/' },
-  // { id: 12, name: 'openmart.com', image: '/partner122.png', link: 'https://www.openmart.com/' },
+const officialPartners = [
+  { name: 'Clay', image: '/clay.png', link: 'https://www.clay.com' },
+  { name: 'Instantly', image: '/instantly.png', link: 'https://instantly.ai' },
+  { name: 'HeyReach', image: '/heyreach.png', link: 'https://heyreach.io' },
+  { name: 'Apify', image: '/apify.png', link: 'https://apify.com' },
+  { name: 'Prospeo', image: '/prospeo.png', link: 'https://prospeo.io' },
+];
+
+const integrations = [
+  {
+    category: 'AI, research, personalization',
+    tools: [
+      { name: 'OpenAI', image: '/openai.png', link: 'https://openai.com' },
+      { name: 'Claude', image: '/claude.png', link: 'https://claude.ai' },
+    ],
+  },
+  {
+    category: 'CRM and sales systems',
+    tools: [
+      { name: 'HubSpot', image: '/hubspot.png', link: 'https://www.hubspot.com' },
+      { name: 'Salesforce', image: '/salesforce.png', link: 'https://www.salesforce.com' },
+      { name: 'Attio', image: '/attio.png', link: 'https://attio.com' },
+      { name: 'GoHighLevel', image: '/gohighlevel.png', link: 'https://www.gohighlevel.com' },
+    ],
+  },
+  {
+    category: 'Data, automation, and ops',
+    tools: [
+      { name: 'Airtable', image: '/airtable.png', link: 'https://www.airtable.com' },
+      { name: 'n8n', image: '/n8n.png', link: 'https://n8n.io' },
+    ],
+  },
+  {
+    category: 'Data providers and prospecting sources',
+    tools: [
+      { name: 'Apollo', image: '/apollo.png', link: 'https://www.apollo.io' },
+      { name: 'LeadMagic', image: '/leadmagic.png', link: 'https://leadmagic.io' },
+      { name: 'Wiza', image: '/wiza.png', link: 'https://wiza.co' },
+    ],
+  },
 ];
 
 function OfficialPartners() {
   return (
     <section className="official-partners">
-      <h2 className="partners-title">Official partners of Outrech Boosters AI</h2>
-      <div className="partners-grid">
-        {partners.map((partner) => (
-          <div key={partner.id} className="partner-item">
-            <a
-              href={partner.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="partner-link"
-            >
-              <img
-                src={partner.image}
-                alt={partner.name}
-                className="partner-logo"
-              />
-            </a>
-          </div>
-        ))}
+      <h2 className="partners-title">Official partners and tools</h2>
+      <p className="section-subtitle">
+        We integrate with the stack you already use, and we can run the infrastructure if you need speed.
+      </p>
+
+      <div className="partners-section">
+        <h3 className="partners-section-title">Official partners we build on</h3>
+        <div className="partners-grid partners-grid-official">
+          {officialPartners.map((partner) => (
+            <div key={partner.name} className="partner-item">
+              <a
+                href={partner.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="partner-link"
+              >
+                <img src={partner.image} alt={partner.name} className="partner-logo" />
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="integrations-section">
+        <h3 className="partners-section-title">Common integrations we support</h3>
+        <div className="integrations-grid">
+          {integrations.map((group, index) => (
+            <div key={index} className="integration-category">
+              <h4 className="integration-category-title">{group.category}</h4>
+              <div className="integration-tools">
+                {group.tools.map((tool) => (
+                  <div key={tool.name} className="integration-item">
+                    <a
+                      href={tool.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="integration-link"
+                    >
+                      <img src={tool.image} alt={tool.name} className="integration-logo" />
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="integrations-cta">
+        <a href="https://calendly.com/outreachboosters/30min" className="secondary-btn">
+          Ask about integrations
+        </a>
       </div>
     </section>
   );

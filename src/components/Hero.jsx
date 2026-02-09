@@ -6,11 +6,11 @@ const YT_EMBED_URL =
 function Hero() {
   return (
     <section className="hero">
-      <p className="hero-pill">For B2B companies above $100k/mo in revenue</p>
+      <p className="hero-pill">For CMOs & CDMOs above $150/mo in revenue</p>
       <h1 className="hero-title">
-        <span className="hero-highlight">Outbound + LinkedIn</span> that creates pipeline you can actually measure.
+       RevOps for <span className="hero-highlight">contract manufacturers</span> that creates qualified meetings you can actually measure.
       </h1>
-      <p className="hero-subtitle">Outbound execution for B2B teams.</p>
+      <p className="hero-subtitle">RevOps execution for CMOs and CDMOs.</p>
 
       <div className="hero-video">
         <div className="hero-video-inner">
@@ -26,7 +26,7 @@ function Hero() {
 
       <form className="hero-form">
         <input placeholder="Enter your work email" />
-        <button type="button">Book a call</button>
+        <button type="button">Book your free strategy call</button>
       </form>
     </section>
   );

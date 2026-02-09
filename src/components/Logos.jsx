@@ -1,12 +1,12 @@
 import React from 'react';
 
 const topRowLogos = [
-  { id: 1, name: 'airops', image: '/logo1.png', hasCaseStudy: true },
-  { id: 2, name: 'EXPANDI.IO', image: '/partner2.jpg', hasCaseStudy: false },
-  { id: 3, name: 'GRIN', image: '/logo1.png', hasCaseStudy: false },
-  { id: 4, name: 'keragon', image: '/logo4.png', hasCaseStudy: true },
-  { id: 5, name: 'Qwilr', image: '/logo5.png', hasCaseStudy: false },
-  { id: 6, name: 'BEAUTIFUL DESTINATIONS', image: '/logo6.png', hasCaseStudy: false },
+  { id: 1, name: 'Clay', image: '/clay.png', hasCaseStudy: false },
+  { id: 2, name: 'Instantly', image: '/instantly.png', hasCaseStudy: false },
+  { id: 3, name: 'Heyreach', image: '/heyreach.png', hasCaseStudy: false },
+  { id: 4, name: 'Apify', image: '/apify.png', hasCaseStudy: false },
+  { id: 5, name: 'Hubspot', image: '/hubspot.png', hasCaseStudy: false },
+  { id: 6, name: 'Gohighlevel', image: '/gohighlevel.png', hasCaseStudy: false },
 ];
 
 const bottomRowLogos = [
@@ -21,7 +21,7 @@ const bottomRowLogos = [
 function Logos() {
   return (
     <section className="logos">
-      <h2 className="logos-title">GTM Teams that trust OBS Agency to grow their Pipelines</h2>
+      <h2 className="logos-title">CMOs & CDMOs that trust OBS Agency to grow their Pipelines</h2>
       
       <div className="logos-slider-container">
         <div className="logos-slider-row logos-slider-top">

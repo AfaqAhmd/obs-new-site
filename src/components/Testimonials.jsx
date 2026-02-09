@@ -1,38 +1,39 @@
 import React from 'react';
 
-const YT_EMBED_URL =
-  'https://www.youtube.com/embed/u31qwQUeGuM?list=RDu31qwQUeGuM&start_radio=1&rel=0&modestbranding=1';
+const YT_EMBED_URL =  
+'https://www.youtube.com/embed/MLpWrANjFbI?si=v4fpTVP_BWKKa8Ys';
+  
 
 const testimonials = [
   {
-    name: 'Max Gowing - Field Day',
+    name: 'Max Gowing',
     role: 'CEO and Founder',
     quote:
       "OBS' knowledge of the platforms is incredible and the systems they build lead to personalized messages at scale that bring us good quality leads.",
   },
   {
-    name: 'Yee Lin Loke - Lyl Marketing',
+    name: 'Yee Lin Loke',
     role: 'Director & Digital Strategist',
     quote:
       "We got so many leads that our client came back to us and said they didn’t have enough people to follow up with everyone.",
   },
   {
-    name: 'Joe DeWulf - Novel',
+    name: 'Joe DeWulf',
     role: 'Co-Founder',
     quote: 'We consistently get new qualified demos every week from the outbound motion OBS runs for us.',
   },
   {
-    name: 'Austin Evans - Peoplelogic',
+    name: 'Austin Evans',
     role: 'VP of Sales',
     quote: 'It feels like an in-house demand-gen team that happens to live outside our company.',
   },
   {
-    name: 'Jessie Litwin - Hemlane',
+    name: 'Jessie Litwin',
     role: 'Sales Outreach Consultant',
     quote: 'Positive connection rates are well above what we were expecting before partnering with OBS.',
   },
   {
-    name: 'Kelly Hamlin - Seller Candy',
+    name: 'Kelly Hamlin',
     role: 'President',
     quote: 'Within a short time we had a steady stream of booked calls replacing slow, manual outreach.',
   },
@@ -43,7 +44,7 @@ function Testimonials() {
     <section className="testimonials">
       <h2 className="section-title">Hear it from clients</h2>
       <p className="section-subtitle">
-        Short, direct feedback from teams who needed pipeline fast.
+        Short, direct feedback from Contract Manufacturers who needed predictable meetings.
       </p>
 
       <div className="testimonial-row">
@@ -61,9 +62,9 @@ function Testimonials() {
               </div>
             </div>
             <div className="testimonial-body">
-              <div className="testimonial-icon-row">
+              {/* <div className="testimonial-icon-row">
                 <span className="testimonial-icon" />
-              </div>
+              </div> */}
               <h3 className="testimonial-name">{t.name}</h3>
               <p className="testimonial-role">{t.role}</p>
               <p className="testimonial-quote">“{t.quote}”</p>

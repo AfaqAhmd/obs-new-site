@@ -1,16 +1,16 @@
 import React from 'react';
 
 const companyTypes = [
-  'B2B services',
-  'B2B SaaS',
-  'Agencies',
-  'Manufacturing',
-  'Logistics and transportation',
-  'Healthcare B2B',
-  'IT services',
-  'Professional services',
-  'B2B suppliers',
-  'Home services, multi-location',
+  'CMOs',
+  'CDMOs',
+  'Co packers',
+  'Private label manufacturers',
+  'Toll manufacturers',
+  // 'Healthcare B2B',
+  // 'IT services',
+  // 'Professional services',
+  // 'B2B suppliers',
+  // 'Home services, multi-location',
 ];
 
 function CompaniesWeWorkWith() {

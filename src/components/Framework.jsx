@@ -3,7 +3,7 @@ import React from 'react';
 function Framework() {
   return (
     <section className="framework">
-      <h2 className="section-title">OBS&apos; Framework to generate demand for B2B Businesses</h2>
+      <h2 className="section-title">OBS Framework to generate demand for Contract Manufacturers, CMOs & CDMOs</h2>
 
       <div className="framework-grid">
         <div className="framework-copy">
@@ -32,23 +32,23 @@ function Framework() {
               <div className="framework-column">
                 <h4>Sales Engagement</h4>
                 <div className="framework-logo-row">
-                  <img src="/logo1.png" alt="Sales engagement logo" className="framework-logo" />
-                  <img src="/logo1.png" alt="Sales engagement logo" className="framework-logo" />
+                  <img src="/instantly.png" alt="Sales engagement logo" className="framework-logo" />
+                  <img src="/claude.png" alt="Sales engagement logo" className="framework-logo" />
                 </div>
               </div>
 
               <div className="framework-column">
                 <h4>Data</h4>
                 <div className="framework-logo-row">
-                  <img src="/logo1.png" alt="Data logo" className="framework-logo" />
-                  <img src="/logo1.png" alt="Data logo" className="framework-logo" />
-                  <img src="/logo1.png" alt="Data logo" className="framework-logo" />
-                  <img src="/logo1.png" alt="Data logo" className="framework-logo" />
-                  <img src="/logo1.png" alt="Data logo" className="framework-logo" />
-                  <img src="/logo1.png" alt="Data logo" className="framework-logo" />
-                  <img src="/logo1.png" alt="Data logo" className="framework-logo" />
-                  <img src="/logo1.png" alt="Data logo" className="framework-logo" />
-                  <img src="/logo1.png" alt="Data logo" className="framework-logo" />
+                  <img src="/instantly.png" alt="Data logo" className="framework-logo" />
+                  <img src="/heyreach.png" alt="Data logo" className="framework-logo" />
+                  <img src="/apify.png" alt="Data logo" className="framework-logo" />
+                  <img src="/clay.png" alt="Data logo" className="framework-logo" />
+                  <img src="/claude.png" alt="Data logo" className="framework-logo" />
+                  <img src="/gohighlevel.png" alt="Data logo" className="framework-logo" />
+                  <img src="/leadmagic.png" alt="Data logo" className="framework-logo" />
+                  <img src="/salesforece.png" alt="Data logo" className="framework-logo" />
+                  <img src="/prospeo.png" alt="Data logo" className="framework-logo" />
                 </div>
               </div>
             </div>
@@ -57,17 +57,17 @@ function Framework() {
               <div className="framework-card">
                 <h5>Web identification</h5>
                 <div className="framework-logo-row">
-                  <img src="/logo1.png" alt="Web identification logo" className="framework-logo" />
-                  <img src="/logo1.png" alt="Web identification logo" className="framework-logo" />
-                  <img src="/logo1.png" alt="Web identification logo" className="framework-logo" />
-                  <img src="/logo1.png" alt="Web identification logo" className="framework-logo" />
+                  <img src="/clay.png" alt="Web identification logo" className="framework-logo" />
+                  <img src="/openai.png" alt="Web identification logo" className="framework-logo" />
+                  <img src="/claude.png" alt="Web identification logo" className="framework-logo" />
+                  <img src="/n8n.png" alt="Web identification logo" className="framework-logo" />
                 </div>
               </div>
 
               <div className="framework-card">
                 <h5>Lead Routing</h5>
                 <div className="framework-logo-row">
-                  <img src="/logo1.png" alt="Lead routing logo" className="framework-logo" />
+                  <img src="/hubspot.png" alt="Lead routing logo" className="framework-logo" />
                 </div>
               </div>
             </div>
