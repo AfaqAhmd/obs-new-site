@@ -158,7 +158,7 @@ a {
 .hero-title {
   font-size: clamp(2.3rem, 3.6vw + 1.2rem, 2.1rem);
   line-height: 1.15;
-  max-width: 680px;
+  /* max-width: 680px; */
   margin: 0 auto 12px;
 }
 
