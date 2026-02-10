@@ -41,7 +41,7 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section className="testimonials">
+    <section id="proof" className="testimonials">
       <h2 className="section-title">Hear it from clients</h2>
       <p className="section-subtitle">
         Short, direct feedback from Contract Manufacturers who needed predictable meetings.

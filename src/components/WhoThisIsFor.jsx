@@ -2,7 +2,7 @@ import React from 'react';
 
 function WhoThisIsFor() {
   return (
-    <section className="who-for">
+    <section id="who-this-is-for" className="who-for">
       <h2 className="section-title">Who this is for</h2>
       <p className="section-subtitle">Clear fit criteria saves everyone time.</p>
 

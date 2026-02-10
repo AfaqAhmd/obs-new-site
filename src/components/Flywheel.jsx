@@ -2,7 +2,7 @@ import React from 'react';
 
 function Flywheel() {
   return (
-    <section className="flywheel">
+    <section id="flywheel" className="flywheel">
       <h2 className="section-title">The Outreach Boosters Flywheel</h2>
       <p className="section-subtitle">
         Content builds trust, email outbound scales it. Calling motion turns trust into conversations, reply data

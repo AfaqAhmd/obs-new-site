@@ -25,7 +25,7 @@ function App() {
         <Logos />
         <Services />
         <Flywheel />
-        <Framework />
+        {/* <Framework /> */}
         <Testimonials />
         <WhereWeShine />
         <WhoThisIsFor />

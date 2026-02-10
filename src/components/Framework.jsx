@@ -2,7 +2,7 @@ import React from 'react';
 
 function Framework() {
   return (
-    <section className="framework">
+    <section id="process" className="framework">
       <h2 className="section-title">OBS Framework to generate demand for Contract Manufacturers, CMOs & CDMOs</h2>
 
       <div className="framework-grid">

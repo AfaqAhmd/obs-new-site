@@ -42,7 +42,7 @@ const services = [
 
 function Services() {
   return (
-    <section className="services">
+    <section id="services" className="services">
       <h2>Our RevOps system for contract manufacturers</h2>
       <p className="section-subtitle">
         Three execution lanes that work together to create predictable meetings and opportunities.

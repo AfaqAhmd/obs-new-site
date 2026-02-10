@@ -6,17 +6,17 @@ const team = [
     role: 'Data Ops & Targeting',
     credibility: 'Built scalable enrichment and routing systems across Clay and CRMs.',
     image: '/profile-1.png',
-    linkedin: 'https://www.linkedin.com/in/alex-carter',
+    linkedin: 'https://www.linkedin.com/in/muhammad-awais-saad-43922812b',
   },
   {
     name: 'Hameez Akhtar',
     role: 'Deliverability & Infrastructure',
     credibility: 'Keeps multi-domain sending setups warm, compliant, and inboxing.',
     image: '/profile-1.png',
-    linkedin: 'https://www.linkedin.com/in/maya-singh',
+    linkedin: 'https://www.linkedin.com/in/hameez-akhtar-8aab3b250/',
   },
   {
-    name: 'Shariq Sheikh',
+    name: 'John Doe',
     role: 'LinkedIn SDR Lead',
     credibility: 'Runs daily LinkedIn touch frameworks that turn views into booked calls.',
     image: '/profile-1.png',
@@ -33,7 +33,7 @@ const team = [
 
 function MeetTheTeam() {
   return (
-    <section className="team-section">
+    <section id="team" className="team-section">
       <h2 className="section-title">Meet the team</h2>
       <p className="section-subtitle">
         The people who build the workflows, run execution, and manage performance.

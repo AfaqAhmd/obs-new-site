@@ -26,7 +26,7 @@ const caseStudies = [
 
 function CaseStudies() {
   return (
-    <section className="case-studies">
+    <section id="case-studies" className="case-studies">
       <h2 className="section-title">Case studies</h2>
       <p className="section-subtitle">Real builds, real execution, clear outcomes.</p>
 

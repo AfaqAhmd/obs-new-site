@@ -44,7 +44,7 @@ const integrations = [
 
 function OfficialPartners() {
   return (
-    <section className="official-partners">
+    <section id="partners" className="official-partners">
       <h2 className="partners-title">Official partners and tools</h2>
       <p className="section-subtitle">
         We integrate with the stack you already use, and we can run the infrastructure if you need speed.
