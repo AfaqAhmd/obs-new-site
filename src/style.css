@@ -1698,9 +1698,9 @@ a {
     gap: 12px;
   }
 
-  .partners-grid-official {
-    /* justify-content: center; */
-  }
+  /* .partners-grid-official {
+    justify-content: center;
+  } */
 
   /* .partner-item {
     min-width: 120px;

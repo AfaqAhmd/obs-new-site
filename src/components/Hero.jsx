@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const YT_EMBED_URL =
-  'https://www.youtube.com/embed/u31qwQUeGuM?list=RDu31qwQUeGuM&start_radio=1&rel=0&modestbranding=1';
+  'https://www.youtube.com/embed/MLpWrANjFbI?si=v4fpTVP_BWKKa8Ys';
 
 const TYPING_PHRASES = ['Contract Development Manufacturers', 'Contract Manufacturers'];
 
