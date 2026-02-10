@@ -62,7 +62,7 @@ function Hero() {
       </div>
 
       <form className="hero-form">
-        <input placeholder="Enter your work email" />
+        <input type='email'  placeholder="Enter your work email" />
         <button type="button">Book your free strategy call</button>
       </form>
     </section>
