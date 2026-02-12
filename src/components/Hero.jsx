@@ -1,53 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const YT_EMBED_URL =
   'https://www.youtube.com/embed/MLpWrANjFbI?si=v4fpTVP_BWKKa8Ys';
 
-const TYPING_PHRASES = ['Contract Development Manufacturers', 'Contract Manufacturers'];
-
 function Hero() {
-  const [displayText, setDisplayText] = useState('');
-  const [phraseIndex, setPhraseIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
+  const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    const currentPhrase = TYPING_PHRASES[phraseIndex];
-
-    let timeout = 180;
-    if (isDeleting) timeout = 60;
-
-    if (!isDeleting && charIndex === currentPhrase.length) {
-      timeout = 1500; // pause before deleting
-      setIsDeleting(true);
-    } else if (isDeleting && charIndex === 0) {
-      timeout = 400; // pause before typing next phrase
-      setIsDeleting(false);
-      setPhraseIndex((prev) => (prev + 1) % TYPING_PHRASES.length);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (email) {
+      // Logic to handle email submission (e.g., send to server)
+      console.log("Form submitted with email:", email);
+    } else {
+      console.log("Email is required");
     }
-
-    const timer = setTimeout(() => {
-      const nextIndex = isDeleting ? charIndex - 1 : charIndex + 1;
-      setCharIndex(nextIndex);
-      setDisplayText(currentPhrase.slice(0, nextIndex));
-    }, timeout);
-
-    return () => clearTimeout(timer);
-  }, [charIndex, isDeleting, phraseIndex]);
+  };
 
   return (
     <section className="hero">
-      <p className="hero-pill">For CMOs &amp; CDMOs above $150/mo in revenue</p>
+      <p className="hero-pill">For CMOs &amp; CDMOs</p>
       <h1 className="hero-title">
-        RevOps for{' '}<br/>
-        <span className="hero-typewriter">
-          <span className="hero-typewriter-text">{displayText}</span>
-          <span className="hero-typewriter-cursor">|</span>
-        </span>
+        Get 10+ Qualified Prospects in 30 Days
         <br />
-        that creates qualified meetings you can actually measure.
+        Or We Work For Free Until You Do
       </h1>
-      <p className="hero-subtitle">RevOps execution for CMOs and CDMOs.</p>
+      <p className="hero-subtitle">GTM & RevOps for Contract Developers & Manufacturers</p>
 
       <div className="hero-video">
         <div className="hero-video-inner">
@@ -61,13 +38,18 @@ function Hero() {
         </div>
       </div>
 
-      <form className="hero-form">
-        <input type='email'  placeholder="Enter your work email" />
-        <button type="button">Book your free strategy call</button>
+      <form className="hero-form" onSubmit={handleSubmit}>
+        <input 
+          type="email" 
+          placeholder="Enter your work email" 
+          value={email} 
+          onChange={(e) => setEmail(e.target.value)} 
+          required 
+        />
+        <button type="submit">Book your free strategy call</button>
       </form>
     </section>
   );
 }
 
 export default Hero;
-

@@ -2,32 +2,39 @@ import React from 'react';
 
 const team = [
   {
+    name: 'Abuld Rehman',
+    role: 'Chief Growth Officer',
+    credibility: 'Built scalable enrichment and routing systems across Clay and CRMs.',
+    image: '/ab-rehman.png',
+    linkedin: 'https://www.linkedin.com/in/aberehman',
+  },
+  {
     name: 'Awais Saad',
     role: 'Data Ops & Targeting',
     credibility: 'Built scalable enrichment and routing systems across Clay and CRMs.',
-    image: '/profile-1.png',
+    image: '/awais.png',
     linkedin: 'https://www.linkedin.com/in/muhammad-awais-saad-43922812b',
   },
   {
     name: 'Hameez Akhtar',
     role: 'Deliverability & Infrastructure',
     credibility: 'Keeps multi-domain sending setups warm, compliant, and inboxing.',
-    image: '/profile-1.png',
+    image: '/hameez.png',
     linkedin: 'https://www.linkedin.com/in/hameez-akhtar-8aab3b250/',
   },
   {
-    name: 'John Doe',
-    role: 'LinkedIn SDR Lead',
+    name: 'Afaq Ahmed',
+    role: 'Developer',
     credibility: 'Runs daily LinkedIn touch frameworks that turn views into booked calls.',
-    image: '/profile-1.png',
-    linkedin: 'https://www.linkedin.com/in/jordan-lee',
+    image: '/afaq.png',
+    linkedin: 'https://www.linkedin.com/in/afaq-ahmed-',
   },
   {
-    name: 'Riley Chen',
-    role: 'Copy & Messaging',
+    name: 'Muhammad Shuraim Shaikh',
+    role: 'ClayOps + GTM',
     credibility: 'Writes messaging that matches buyer language across email and LinkedIn.',
-    image: '/profile-1.png',
-    linkedin: 'https://www.linkedin.com/in/riley-chen',
+    image: '/shuraim.png',
+    linkedin: 'https://www.linkedin.com/in/muhammad-shuraim-shaikh-a33272320',
   },
 ];
 

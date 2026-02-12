@@ -23,9 +23,9 @@ function Header() {
 
       <nav className={`top-nav ${isMenuOpen ? 'top-nav-open' : ''}`}>
         <a href="#services" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-          Services
+          Service
         </a>
-        <a href="#who-this-is-for" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+        {/* <a href="#who-this-is-for" className="nav-link" onClick={() => setIsMenuOpen(false)}>
           Who this is for
         </a>
         <a href="#proof" className="nav-link" onClick={() => setIsMenuOpen(false)}>
@@ -33,12 +33,15 @@ function Header() {
         </a>
         <a href="#flywheel" className="nav-link" onClick={() => setIsMenuOpen(false)}>
           Flywheel
-        </a>
+        </a> */}
         <a href="#case-studies" className="nav-link" onClick={() => setIsMenuOpen(false)}>
           Case Studies
         </a>
+         <a href="#team" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+              Team
+            </a>
 
-        <div
+        {/* <div
           className={`nav-dropdown ${isOtherOpen ? 'nav-dropdown-open' : ''}`}
           onMouseLeave={() => setIsOtherOpen(false)}
         >
@@ -61,7 +64,7 @@ function Header() {
             </a>
           </div>
           
-        </div>
+        </div> */}
         
       </nav>
 

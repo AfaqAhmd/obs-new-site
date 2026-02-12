@@ -1,39 +1,49 @@
 
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const services = [
   {
-    title: 'LinkedIn SDRs, done for you',
+    title: 'AI-Augmented Outbound',
     label: 'LinkedIn SDRs',
-    subtitle: 'Daily prospecting that turns the right buyer accounts into real conversations.',
+    subtitle: 'Done for you email + LinkedIn that turns target accounts into booked meetings.',
     points: [
-      'Daily targeting, connection strategy, and follow ups',
-      'Reply handling, routing, and meeting intent qualification',
-      'Handoff into your CRM with a clear owner and next step',
+      'Best for, teams that want meetings without building an SDR team',
+      'Cold email sequences built on clean data and safe deliverability',
+      'LinkedIn prospecting, connection requests, follow ups, and reply routing',
+      'AI assisted personalization and intent based triage',
+      'We respond to positive replies within 15 minutes and qualify fast',
+      'Meetings booked on your calendar, with CRM handoff and next step',
+
     ],
     outcome: 'More qualified conversations, without building an SDR team.',
     cta: 'See LinkedIn SDR workflow',
   },
   {
-    title: 'LinkedIn content that supports outbound',
+    title: 'Dedicated Calling SDR',
     label: 'LinkedIn Content',
-    subtitle: 'Founder led content that builds trust with buyers of contract manufacturing.',
+    subtitle: 'A designated SDR running cold calling + warm lead follow up to book calls.',
     points: [
-      'Weekly content planning tied to your buyer personas and offer',
-      'Content that makes prospects recognize the switching triggers before you pitch',
-      'Messaging angles that feed outbound sequences and LinkedIn follow ups',
+      'Best for, offers that convert better on live conversations',
+      'Daily cold dialing to your target list with tight scripts and objection handling',
+      'Warm calling for inbound, reactivation, event leads, and referrals',
+      'Qualification on the call, then booking directly onto your calendar',
+      'CRM activity logging, stage tracking, and sales cycle visibility',
+      'Automated reports and attribution so you know what creates pipeline',
     ],
     outcome: 'Higher trust, warmer replies, faster conversions.',
     cta: 'See content system',
   },
   {
-    title: 'Email outbound that scales safely',
+    title: 'Content + Retargeting',
     label: 'Outbound, Email Prospecting',
-    subtitle: 'Personalization at scale powered by clean data and deliverability.',
+    subtitle: 'Multichannel content and ads that build authority and keep you top of mind.',
     points: [
-      'Buyer lists, enrichment, validation, and segmentation for contract manufacturing',
-      'Deliverability setup, sequencing, reply handling, and iteration',
-      'Positive response tracking and CRM logging',
+      'Best for, teams that want inbound lift and warmer outbound replies',
+      'Founder led content that educates your niche and builds trust',
+      'Messaging angles tied to real buying triggers and switching moments',
+      'Retargeting on Google and Meta to reinforce proof and offers',
+      'Ongoing creative iteration based on engagement and pipeline signals',
+      'Influence tracked inside CRM, from first touch to booked meeting',
     ],
     outcome: 'A consistent stream of positive replies you can measure.',
     cta: 'See outbound workflow',
@@ -41,16 +51,47 @@ const services = [
 ];
 
 function Services() {
+  const sectionRef = useRef(null);
+  const [revealed, setRevealed] = useState(false);
+
+  useEffect(() => {
+    const sectionEl = sectionRef.current;
+    if (!sectionEl) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setRevealed(true);
+            observer.disconnect();
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 0.2,
+      }
+    );
+
+    observer.observe(sectionEl);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section id="services" className="services">
-      <h2>Our RevOps system for contract manufacturers</h2>
+    <section id="services" ref={sectionRef} className="services">
+      <h2>Our GTM & RevOps system for contract manufacturers</h2>
       <p className="section-subtitle">
         Three execution lanes that work together to create predictable meetings and opportunities.
       </p>
 
       <div className="service-grid">
-        {services.map((service) => (
-          <article key={service.title} className="service-card">
+        {services.map((service, index) => (
+          <article
+            key={service.title}
+            className={`service-card ${revealed ? 'service-card-revealed' : ''}`}
+            style={revealed ? { transitionDelay: `${index * 160}ms` } : undefined}
+          >
             {/* <div className="service-label-row">
               <span className="service-chip">{service.label}</span>
             </div> */}
@@ -67,9 +108,9 @@ function Services() {
               ))}
             </ul>
 
-            <p className="service-outcome">
+            {/* <p className="service-outcome">
               <strong>{service.outcome}</strong>
-            </p>
+            </p> */}
 
             {/* {service.cta && (
               <button className="secondary-btn service-cta" type="button">
