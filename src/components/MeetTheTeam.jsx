@@ -36,6 +36,27 @@ const team = [
     image: '/shuraim.png',
     linkedin: 'https://www.linkedin.com/in/muhammad-shuraim-shaikh-a33272320',
   },
+  {
+    name: 'Shayan Basit',
+    role: 'ClayOps + GTM',
+    credibility: 'Writes messaging that matches buyer language across email and LinkedIn.',
+    image: '/shayan.png',
+    linkedin: 'https://www.linkedin.com/in/shayan-basit-476b3738a',
+  },
+  {
+    name: 'Salahudin',
+    role: 'ClayOps + GTM',
+    credibility: 'Writes messaging that matches buyer language across email and LinkedIn.',
+    image: '/salahudin.png',
+    linkedin: 'https://www.linkedin.com/in/salahudin-00b955386',
+  },
+  {
+    name: 'Sahil Imran',
+    role: 'Content Design Specialist',
+    credibility: 'Writes messaging that matches buyer language across email and LinkedIn.',
+    image: '/sahil.png',
+    linkedin: 'https://www.linkedin.com/in/sahil-imran-6aa916280',
+  },
 ];
 
 function MeetTheTeam() {
