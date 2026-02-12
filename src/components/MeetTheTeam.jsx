@@ -30,7 +30,7 @@ const team = [
     linkedin: 'https://www.linkedin.com/in/afaq-ahmed-',
   },
   {
-    name: 'Muhammad Shuraim Shaikh',
+    name: 'Muhammad Shuraim',
     role: 'ClayOps + GTM',
     credibility: 'Writes messaging that matches buyer language across email and LinkedIn.',
     image: '/shuraim.png',
@@ -56,6 +56,13 @@ const team = [
     credibility: 'Writes messaging that matches buyer language across email and LinkedIn.',
     image: '/sahil.png',
     linkedin: 'https://www.linkedin.com/in/sahil-imran-6aa916280',
+  },
+  {
+    name: 'Shariq Sheikh',
+    role: 'Linkedin Operator',
+    credibility: 'Writes messaging that matches buyer language across email and LinkedIn.',
+    image: '/shariq.png',
+    linkedin: 'https://www.linkedin.com/in/shariq-sheikh-sherry',
   },
 ];
 
