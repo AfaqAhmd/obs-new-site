@@ -18,7 +18,7 @@ const features = [
   },
   {
     icon: '✓',
-    title: 'LinkedIn SDR execution',
+    title: 'SDR calling motion',
     description: 'We run daily touches that convert awareness into conversations.',
   },
   {

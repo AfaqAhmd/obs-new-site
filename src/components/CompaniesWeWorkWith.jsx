@@ -1,22 +1,22 @@
 import React from 'react';
 
 const companyTypes = [
-  'CMOs',
-  'CDMOs',
-  'Co packers',
-  'Private label manufacturers',
-  'Toll manufacturers',
-  // 'Healthcare B2B',
-  // 'IT services',
-  // 'Professional services',
-  // 'B2B suppliers',
-  // 'Home services, multi-location',
+  'Personal Care and Beauty Care',
+  'Pharma and Biotech',
+  'Nutraceuticals and Dietary Supplements',
+  'OTC Healthcare Products',
+  'Medical Devices and Diagnostics',
+  'Food and Beverage Manufacturing',
+  'Pet Care and Pet Wellness',
+  'Household and Home Care Products',
+  'Baby and Family Care Products',
+  'Fragrance and Home Scent Products',
 ];
 
 function CompaniesWeWorkWith() {
   return (
     <section className="companies-section">
-      <h2 className="section-title companies-title">Companies we work with</h2>
+      <h2 className="section-title companies-title">Industries we work with</h2>
       <p className="section-subtitle">
         We work best when the offer is clear and follow up is fast
       </p>

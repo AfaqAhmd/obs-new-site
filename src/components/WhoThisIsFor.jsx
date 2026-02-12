@@ -13,7 +13,7 @@ function WhoThisIsFor() {
             <li className="who-item who-item-good">
               <span className="who-icon who-icon-good">✔</span>
               <span>
-                You are a contract manufacturer, CMO, or CDMO and need consistent meetings with qualified buyers
+                You are a CMO (Contract Manufacturing Organization), and CDMO (Contract Development & Manufacturing Organization) and need consistent meetings with qualified buyers
               </span>
             </li>
             <li className="who-item who-item-good">
