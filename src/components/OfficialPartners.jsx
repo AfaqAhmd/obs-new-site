@@ -36,7 +36,7 @@ const integrations = [
     category: 'Data providers and prospecting sources',
     tools: [
       { name: 'Apollo', image: '/apollo-w.png', link: 'https://www.apollo.io' },
-      { name: 'LeadMagic', image: '/leadmagic.png', link: 'https://leadmagic.io' },
+      { name: 'LeadMagic', image: '/leadmagic-w.png', link: 'https://leadmagic.io' },
       { name: 'Wiza', image: '/wiza.png', link: 'https://wiza.co' },
     ],
   },
