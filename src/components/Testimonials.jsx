@@ -5,35 +5,35 @@ const YT_EMBED_URL = 'https://www.youtube.com/embed/MLpWrANjFbI?si=v4fpTVP_BWKKa
 const testimonials = [
   {
     id: 1,
-    name: 'Max Gowing',
-    location: 'Ohio',
+    name: 'Dave Boydston',
+    location: 'Texas',
     heading: 'I am so grateful',
     quote: "OBS' knowledge of the platforms is incredible and the systems they build lead to personalized messages at scale that bring us good quality leads.",
-    image: '/testimonial-1.jpg', // Placeholder - user will replace
+    image: '/dave-cih.png', // Placeholder - user will replace
   },
   {
     id: 2,
-    name: 'Yee Lin Loke',
-    location: 'California',
+    name: 'Caesar Chu',
+    location: 'New York',
     heading: 'We got so many leads',
     quote: "Our client came back to us and said they didn't have enough people to follow up with everyone. OBS transformed our outreach completely.",
-    image: '/testimonial-2.jpg', // Placeholder - user will replace
+    image: '/caesar-hwl.png', // Placeholder - user will replace
   },
   {
     id: 3,
-    name: 'Joe DeWulf',
+    name: 'Adir houri',
     location: 'Texas',
     heading: 'Consistent qualified demos',
     quote: 'We consistently get new qualified demos every week from the outbound motion OBS runs for us. It feels like having an in-house team.',
-    image: '/testimonial-3.jpg', // Placeholder - user will replace
+    image: '/adir-ar.png', // Placeholder - user will replace
   },
   {
     id: 4,
-    name: 'Austin Evans',
-    location: 'New York',
+    name: 'Zohaib Khan',
+    location: 'Karachi',
     heading: 'In-house demand-gen team',
     quote: 'It feels like an in-house demand-gen team that happens to live outside our company. The results speak for themselves.',
-    image: '/testimonial-4.jpg', // Placeholder - user will replace
+    image: '/zohaib-api.png', // Placeholder - user will replace
   },
 ];
 
