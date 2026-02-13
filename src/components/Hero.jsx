@@ -18,7 +18,7 @@ function Hero() {
 
   return (
     <section className="hero">
-      <p className="hero-pill">For CMOs &amp; CDMOs</p>
+      <p className="hero-pill">For CMOs (Contract Manufacturing Organizations) &amp; <br/> CDMOs (Contract Development & Manufacturing Organizations)</p>
       <h1 className="hero-title">
         Get 10+ Qualified Prospects in 30 Days
         <br />

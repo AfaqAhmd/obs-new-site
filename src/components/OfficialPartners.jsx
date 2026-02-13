@@ -20,8 +20,8 @@ const integrations = [
     category: 'CRM and sales systems',
     tools: [
       { name: 'HubSpot', image: '/hubspot.png', link: 'https://www.hubspot.com' },
-      { name: 'Salesforce', image: '/salesforce.png', link: 'https://www.salesforce.com' },
       { name: 'Attio', image: '/attio.png', link: 'https://attio.com' },
+      { name: 'Salesforce', image: '/salesforce.png', link: 'https://www.salesforce.com' },
       { name: 'GoHighLevel', image: '/gohighlevel.png', link: 'https://www.gohighlevel.com' },
     ],
   },
