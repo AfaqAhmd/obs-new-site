@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
@@ -18,9 +18,27 @@ import FAQ from './components/FAQ.jsx';
 import FooterCta from './components/FooterCta.jsx';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem('darkMode');
+    return saved ? JSON.parse(saved) : false;
+  });
+
+  useEffect(() => {
+    localStorage.setItem('darkMode', JSON.stringify(darkMode));
+    if (darkMode) {
+      document.documentElement.classList.add('dark-mode');
+    } else {
+      document.documentElement.classList.remove('dark-mode');
+    }
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="page">
-      <Header />
+    <div className={`page ${darkMode ? 'dark-mode' : ''}`}>
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <main>
         <Hero />
         <Logos />

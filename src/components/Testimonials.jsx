@@ -21,7 +21,7 @@ const testimonials = [
   },
   {
     id: 3,
-    name: 'Adir houri',
+    name: 'Adir Houri',
     location: 'Texas',
     heading: 'Consistent qualified demos',
     quote: 'We consistently get new qualified demos every week from the outbound motion OBS runs for us. It feels like having an in-house team.',

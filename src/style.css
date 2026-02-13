@@ -188,6 +188,28 @@ a {
   align-items: center;
 }
 
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(15, 23, 42, 0.7);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 8px;
+  flex-shrink: 0;
+}
+
+.dark-mode-toggle:hover {
+  background: rgba(15, 23, 42, 0.9);
+  border-color: rgba(59, 130, 246, 0.6);
+  transform: scale(1.05);
+}
+
 .nav-toggle {
   display: none;
   background: none;
@@ -325,7 +347,7 @@ a {
 }
 .logos {
   text-align: center;
-  margin: 148px 0;
+  margin: 50px 0;
   overflow: hidden;
 }
 
@@ -1404,7 +1426,7 @@ a {
 }
 
 .where-we-shine {
-  margin: 170px 0;
+  margin: 85px 0;
   text-align: center;
 }
 
@@ -2724,5 +2746,142 @@ a {
   .footer-cta-testimonial-quote {
     font-size: 0.95rem;
   }
+
+  .dark-mode-toggle {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+  }
+}
+
+/* Dark Mode Styles */
+.dark-mode body {
+  background-color: #000000;
+  background-image: none;
+}
+
+.dark-mode .page {
+  background: #000000;
+}
+
+.dark-mode .top-bar {
+  background: rgba(0, 0, 0, 0.95);
+  border-bottom-color: rgba(148, 163, 184, 0.2);
+}
+
+.dark-mode .hero-pill,
+.dark-mode .service-card,
+.dark-mode .case-card,
+.dark-mode .testimonial-slide,
+.dark-mode .shine-card,
+.dark-mode .who-callout,
+.dark-mode .company-pill,
+.dark-mode .partner-item,
+.dark-mode .integration-item,
+.dark-mode .footer,
+.dark-mode .footer-cta-testimonial,
+.dark-mode .partners-grid,
+.dark-mode .integration-category,
+.dark-mode .companies-grid {
+  background: rgba(0, 0, 0, 0.8) !important;
+  border-color: rgba(148, 163, 184, 0.2) !important;
+}
+
+/* Logos component background unchanged in dark mode */
+/* .dark-mode .logos-slider-container {
+  background: rgba(0, 0, 0, 0.6);
+  border-color: rgba(148, 163, 184, 0.2);
+} */
+
+.dark-mode .primary-cta,
+.dark-mode .hero-form button,
+.dark-mode .footer-cta-form-button {
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 45%, #1e3a8a 100%);
+  box-shadow: 0 10px 22px rgba(59, 130, 246, 0.3);
+}
+
+.dark-mode .primary-cta:hover,
+.dark-mode .hero-form button:hover,
+.dark-mode .footer-cta-form-button:hover {
+  box-shadow: 0 14px 30px rgba(59, 130, 246, 0.4);
+}
+
+.dark-mode .secondary-btn {
+  border-color: rgba(148, 163, 184, 0.5);
+  color: #e5e7eb;
+}
+
+.dark-mode .secondary-btn:hover {
+  background: rgba(0, 0, 0, 0.5);
+  border-color: rgba(59, 130, 246, 0.6);
+}
+
+.dark-mode .hero-form input,
+.dark-mode .footer-cta-form-input {
+  background: rgba(0, 0, 0, 0.7);
+  border-color: rgba(148, 163, 184, 0.5);
+  color: #f9fafb;
+}
+
+.dark-mode .hero-form input:focus,
+.dark-mode .footer-cta-form-input:focus {
+  border-color: rgba(59, 130, 246, 0.8);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.dark-mode .social-link {
+  background: rgba(0, 0, 0, 0.7);
+  border-color: rgba(148, 163, 184, 0.3);
+}
+
+.dark-mode .social-link:hover {
+  background: rgba(0, 0, 0, 0.9);
+  border-color: rgba(59, 130, 246, 0.6);
+}
+
+.dark-mode .footer-contact-link:hover {
+  color: #60a5fa;
+}
+
+.dark-mode .nav-dropdown-menu {
+  background: rgba(0, 0, 0, 0.98);
+  border-color: rgba(148, 163, 184, 0.4);
+}
+
+.dark-mode .top-nav.top-nav-open {
+  background: rgba(0, 0, 0, 0.98);
+  border-color: rgba(148, 163, 184, 0.4);
+}
+
+.dark-mode .footer-cta-badge {
+  background: rgba(0, 0, 0, 0.8);
+  border-color: rgba(148, 163, 184, 0.3);
+}
+
+.dark-mode .testimonials-video-inner,
+.dark-mode .hero-video-inner {
+  border-color: rgba(148, 163, 184, 0.3);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode .timeline-card {
+  background: rgba(0, 0, 0, 0.8);
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+.dark-mode .team-card {
+  background: rgba(0, 0, 0, 0.8);
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+.dark-mode .faq-item {
+  background: rgba(0, 0, 0, 0.8);
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+.dark-mode .faq-item:hover {
+  background: rgba(0, 0, 0, 0.9);
+  border-color: rgba(148, 163, 184, 0.3);
 }
 

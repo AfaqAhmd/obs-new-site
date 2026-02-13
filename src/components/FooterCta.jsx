@@ -14,10 +14,10 @@ const testimonial = {
 };
 
 const avatars = [
-  { name: 'Caesar', image: '/caesar-hwl.png' },
-  { name: 'Dave', image: '/dave-cih.png' },
-  { name: 'Adir', image: '/adir-ar.png' },
-  { name: 'Zohaib', image: '/zohaib-api.png' },
+  { name: 'Abdul Rehman', image: '/ab-rehman.png' },
+  { name: 'Awais Saad', image: '/awais.png' },
+  { name: 'Hameez Akhtar', image: '/hameez.png' },
+  { name: 'Shuraim', image: '/shuraim.png' },
 ];
 
 function FooterCta() {
