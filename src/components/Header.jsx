@@ -34,12 +34,23 @@ function Header() {
         <a href="#flywheel" className="nav-link" onClick={() => setIsMenuOpen(false)}>
           Flywheel
         </a> */}
-        <a href="#case-studies" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-          Case Studies
+        <a href="#results-timeline" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+          Results Timeline
         </a>
          <a href="#team" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               Team
             </a>
+
+        {/* Mobile CTA Button */}
+        <a
+          href="https://calendly.com/outreachboosters/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="primary-cta nav-mobile-cta"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          Book a free call
+        </a>
 
         {/* <div
           className={`nav-dropdown ${isOtherOpen ? 'nav-dropdown-open' : ''}`}
@@ -68,7 +79,7 @@ function Header() {
         
       </nav>
 
-      <div className="header-cta">
+      {/* <div className="header-cta">
         <a
           href="https://calendly.com/outreachboosters/30min"
           target="_blank"
@@ -77,7 +88,7 @@ function Header() {
         >
           Book a free call
         </a>
-      </div>
+      </div> */}
     </header>
   );
 }

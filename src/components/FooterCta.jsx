@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const badges = [
-  'Trusted by 50+ CMOs',
+  'Trusted by 10+ CMOs',
   '4.9/5 Rating',
   '500+ Qualified Leads',
 ];

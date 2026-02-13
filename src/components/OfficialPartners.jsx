@@ -1,10 +1,10 @@
 import React from 'react';
 
 const officialPartners = [
-  { name: 'Clay', image: '/clay.png', link: 'https://www.clay.com' },
+  { name: 'Clay', image: '/Clay-w.png', link: 'https://www.clay.com' },
   { name: 'Instantly', image: '/instantly.png', link: 'https://instantly.ai' },
-  { name: 'HeyReach', image: '/heyreach.png', link: 'https://heyreach.io' },
-  { name: 'Apify', image: '/apify.png', link: 'https://apify.com' },
+  { name: 'HeyReach', image: '/heyreach-w.png', link: 'https://heyreach.io' },
+  { name: 'Apify', image: '/apify-w.png', link: 'https://apify.com' },
   { name: 'Prospeo', image: '/prospeo.png', link: 'https://prospeo.io' },
 ];
 
@@ -12,30 +12,30 @@ const integrations = [
   {
     category: 'AI, research, personalization',
     tools: [
-      { name: 'OpenAI', image: '/openai.png', link: 'https://openai.com' },
-      { name: 'Claude', image: '/claude.png', link: 'https://claude.ai' },
+      { name: 'OpenAI', image: '/openai-w.png', link: 'https://openai.com' },
+      { name: 'Claude', image: '/claude-w.png', link: 'https://claude.ai' },
     ],
   },
   {
     category: 'CRM and sales systems',
     tools: [
       { name: 'HubSpot', image: '/hubspot.png', link: 'https://www.hubspot.com' },
-      { name: 'Attio', image: '/attio.png', link: 'https://attio.com' },
+      { name: 'Attio', image: '/attio-w.png', link: 'https://attio.com' },
       { name: 'Salesforce', image: '/salesforce.png', link: 'https://www.salesforce.com' },
-      { name: 'GoHighLevel', image: '/gohighlevel.png', link: 'https://www.gohighlevel.com' },
+      { name: 'GoHighLevel', image: '/highlevel-w.png', link: 'https://www.gohighlevel.com' },
     ],
   },
   {
     category: 'Data, automation, and ops',
     tools: [
-      { name: 'Airtable', image: '/airtable.png', link: 'https://www.airtable.com' },
-      { name: 'n8n', image: '/n8n.png', link: 'https://n8n.io' },
+      { name: 'Airtable', image: '/airtable-w.png', link: 'https://www.airtable.com' },
+      { name: 'n8n', image: '/n8n-w.png', link: 'https://n8n.io' },
     ],
   },
   {
     category: 'Data providers and prospecting sources',
     tools: [
-      { name: 'Apollo', image: '/apollo.png', link: 'https://www.apollo.io' },
+      { name: 'Apollo', image: '/apollo-w.png', link: 'https://www.apollo.io' },
       { name: 'LeadMagic', image: '/leadmagic.png', link: 'https://leadmagic.io' },
       { name: 'Wiza', image: '/wiza.png', link: 'https://wiza.co' },
     ],

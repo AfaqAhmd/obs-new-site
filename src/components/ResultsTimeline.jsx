@@ -88,7 +88,7 @@ function ResultsTimeline() {
   }, []);
 
   return (
-    <section className="results-timeline">
+    <section className="results-timeline" id="results-timeline">
       <h2 className="timeline-title">Your results timeline</h2>
       <p className="timeline-subtitle">What we build first, what launches next, and how we scale.</p>
 

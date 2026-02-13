@@ -987,7 +987,7 @@ a {
 
 .flywheel-graphic {
   margin: 24px auto;
-  max-width: 900px;
+  max-width: 1400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -996,7 +996,7 @@ a {
 .flywheel-image {
   width: 100%;
   height: auto;
-  max-width: 100%;
+  max-width: 1400px;
   border-radius: 18px;
   display: block;
 }
@@ -2076,6 +2076,14 @@ a {
     padding: 4px 0;
   }
 
+  .nav-mobile-cta {
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+
   .dropdown-arrow {
     font-size: 0.6rem;
   }
@@ -2258,6 +2266,16 @@ a {
     margin: 80px 0;
     scroll-margin-top: 180px;
   } */
+
+  .flywheel-graphic {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .flywheel-image {
+    max-width: 100%;
+    width: 100%;
+  }
 
   .section-title {
     font-size: 1.5rem;
