@@ -83,7 +83,7 @@ function MeetTheTeam() {
 
             <h3 className="team-name">{member.name}</h3>
             <p className="team-role">{member.role}</p>
-            <p className="team-credibility">{member.credibility}</p>
+            {/* <p className="team-credibility">{member.credibility}</p> */}
 
             <a
               href={member.linkedin}
@@ -91,7 +91,15 @@ function MeetTheTeam() {
               rel="noopener noreferrer"
               className="secondary-btn team-cta"
             >
-              Connect on LinkedIn
+              <span>Connect on</span>
+              <svg
+                className="team-cta-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8.25h4.56V24H.22zM8.34 8.25h4.37v2.13h.06c.61-1.16 2.1-2.38 4.33-2.38 4.63 0 5.48 3.05 5.48 7.02V24h-4.56v-7.39c0-1.76-.03-4.03-2.46-4.03-2.46 0-2.84 1.92-2.84 3.9V24H8.34z" />
+              </svg>
             </a>
           </article>
         ))}

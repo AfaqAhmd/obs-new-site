@@ -20,9 +20,8 @@ function Hero() {
     <section className="hero">
       <p className="hero-pill">For CMOs (Contract Manufacturing Organizations) &amp; <br/> CDMOs (Contract Development & Manufacturing Organizations)</p>
       <h1 className="hero-title">
-        Get 10+ Qualified Prospects in 30 Days
-        <br />
-        Or We Work For Free Until You Do
+        10+ qualified prospects in 30 days, <br/> or your month is on us until results show up
+        
       </h1>
       <p className="hero-subtitle">GTM & RevOps for Contract Developers & Manufacturers</p>
 

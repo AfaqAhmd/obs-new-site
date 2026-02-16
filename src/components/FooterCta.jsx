@@ -41,10 +41,10 @@ function FooterCta() {
           <div className="footer-cta-brand">
             <div className="footer-cta-logo-line">
               <img src="/obs-newlogo.png" alt="Outreach Boosters AI" className="footer-cta-logo-image" />
-              <div className="footer-cta-logo-text">Outreach Boosters AI</div>
+              <div className="footer-cta-logo-text">Outreach Boosters</div>
             </div>
             <p className="footer-cta-description">
-              Get 10+ Qualified Prospects in 30 Days Or We Work For Free Until You Do
+              10+ qualified prospects in 30 days, or your month is on us until results show up
             </p>
           </div>
 
@@ -61,13 +61,13 @@ function FooterCta() {
           </div>
 
           {/* Badges */}
-          <div className="footer-cta-badges">
+          {/* <div className="footer-cta-badges">
             {badges.map((badge, index) => (
               <span key={index} className="footer-cta-badge">
                 {badge}
               </span>
             ))}
-          </div>
+          </div> */}
 
           {/* Credibility Line */}
           <div className="footer-cta-credibility">
@@ -95,7 +95,7 @@ function FooterCta() {
           {/* Lead Capture Form */}
           <form className="footer-cta-form" onSubmit={handleSubmit}>
             <label htmlFor="footer-email" className="footer-cta-form-label">
-              Get started today
+              Subscribe to our Newsletter
             </label>
             <div className="footer-cta-form-input-wrapper">
               <input

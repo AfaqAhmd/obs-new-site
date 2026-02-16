@@ -74,7 +74,7 @@ function App() {
             <div className="footer-address">
               Suite 14, 74 Craven Park Rd, London, NW10 9A7
             </div>
-            <div>© {new Date().getFullYear()} Outreach Boosters AI. All rights reserved.</div>
+            <div>© {new Date().getFullYear()} Outreach Boosters. All rights reserved.</div>
             {/* <div className="footer-links">
               <a href="#">Privacy</a>
               <a href="#">Terms</a>
