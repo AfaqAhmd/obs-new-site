@@ -11,7 +11,7 @@ function Flywheel() {
 
       <div className="flywheel-graphic">
         <img 
-          src="/flywheel-tt.gif" 
+          src="/flywheel-ttt.gif" 
           alt="The Outreach Boosters Flywheel diagram showing the cyclical process of content, email outbound, calling motion, and reply data"
           className="flywheel-image"
         />
